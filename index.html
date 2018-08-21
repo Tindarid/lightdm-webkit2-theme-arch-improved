@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="../_vendor/js/jquery.min.js"></script>
+</head>
+<body>
+    <a href="#menu" id="toggle"><span></span></a>
+    <div id="menu">
+        <ul>
+        <li><a href="#shutdown" onclick="javascript:lightdm.shutdown();">Shutdown</a></li>
+        <li><a href="#suspend" onclick="javascript:lightdm.suspend();">Suspend</a></li>
+        <li><a href="#restart" onclick="javascript:lightdm.restart();">Restart</a></li>
+        </ul>
+    </div>
+    <input type="text" id="input" placeholder="user" name="input">
+    <output type="text" id="output"></output>
+    <script src="main.js"></script>
+</body>
+</html>
